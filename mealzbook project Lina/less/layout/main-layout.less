@@ -111,7 +111,7 @@
 		display: inline-block;
 		position: absolute;
 	}
-	.icon, img{
+	.icon, img, .circle{
 		color: @orange;
 		vertical-align: middle;
 		margin: 0 15px;
@@ -125,8 +125,30 @@
 			background-color: @orange;
 		}
 	}
+	&.gray-line{
+		&:before, &:after{
+			background-color: #8d8d8d;
+		}
+	}
 	&:before{
 		left: 0;
+	}
+	&:after{
+		right: 0;
+	}
+}
+.circle{
+	width: 64px;
+	height: 64px;
+	background-color: @orange;
+	border-radius: 100%;
+	.icon{
+		color: #ffffff;
+		line-height: 64px;
+		margin: 0;
+	}
+	.icon-gift{
+		font-size: 40px;
 	}
 }
 .wrap-features{
@@ -408,6 +430,42 @@
 }
 /*-------------------------------------------------------------
 						END	SECTION GUIDE
+-------------------------------------------------------------*/
+/*-------------------------------------------------------------
+						SECTION REGISTER-BLOCK
+-------------------------------------------------------------*/
+.register-block{
+	padding: 26px 0 60px;
+	position: relative;
+	.title-large{
+		margin-bottom: 2px;
+	}
+	.btn{
+		margin-top: 12px;
+	}
+}
+.page-up{
+	width: 193px;
+	height: 39px;
+	background-image: url(../images/page-up.png);
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -95px;
+	&:hover{
+		text-decoration: none;
+		.icon-arrow-top{
+			color: #ffffff;
+		}
+	}
+	.icon-arrow-top{
+		font-size: 10px;
+		line-height: 50px;
+		color: #4d4d4d;
+	}
+}
+/*-------------------------------------------------------------
+						END	SECTION REGISTER-BLOCK
 -------------------------------------------------------------*/
 .btn-primary{
 	background-color: #1d87e4;

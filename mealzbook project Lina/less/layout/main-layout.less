@@ -209,21 +209,29 @@
 						SECTION GUIDE
 -------------------------------------------------------------*/
 .guide{
-	padding: 185px 0;
+	padding: 185px 0 54px;
 	text-align: center;
 	.title{
 		margin: 3px 0 2px;
+	}
+	> .main-width{
+		padding: 0;
 	}
 }
 .wrap-menu{
 	background-image: url(../images/guide-section-bg.png);
 	background-repeat: no-repeat;
-	margin-top: 36px;
+	margin: 36px 0 80px;
 	background-position: 50% 71%;
 }
 .cover{
 	position: relative;
 	display: inline-block;
+	&:hover{
+		.wrap-opacity-text-block{
+			opacity: 1;
+		}
+	}
 }
 .wrap-opacity-text-block{
 	position: absolute;
@@ -231,15 +239,97 @@
 	left: 0;
 	width: 100%;
 	text-align: center;
+	margin-top: -66px;
+	opacity: 0;
+	.transition(0.2s);
 }
 .opacity-text-block{
 	background-color: rgba(0, 0, 0, 0.7);
 	border-radius: 4px;
-	padding: 20px 22px;
+	padding: 20px 24px;
 	display: inline-block;
+	font-size: 18px;
+	line-height: 15px;
 	.title-wide{
 		font-size: 10px;
 	}
+	.btn{
+		margin-top: 18px;
+	}
+}
+.bottom-line{
+	width: 40px;
+	height: 1px;
+	&.gray{
+		background-color: #cccccc;
+	}
+	&.orange{
+		background-color: @orange;
+	}
+}
+.style-block-guide{
+	background-color: #ffffff;
+	position: relative;
+	text-align: left;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding: 50px 40px;
+	padding-right: 35%;
+	background-position: 0 0;
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	border-radius: 2px;
+	.title{
+		color: #333333;
+		font-weight: 800;
+		margin-bottom: 7px;
+	}
+	.btn{
+		margin: 11px 0 8px;
+	}
+	.bottom-line{
+		margin: auto;
+	}
+}
+
+.contact{
+	background-color: #ffffff;
+	border-radius: 2px;
+	margin: 30px 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	position: relative;
+	&:after{
+		content: "";
+		width: 1px;
+		background-color: #d9d9d9;
+		position: absolute;
+		left: 50%;
+		top: 44px;
+		bottom: 44px;
+		margin-left: 1px;
+	}
+	.bottom-line{
+		margin: 6px auto  12px;
+	}
+	.black{
+		font-size: 16px;
+	}
+	.title{
+		margin: 10px 0 0;
+	}
+	.social-icons{
+		display: inline-block;
+		margin: 14px 0 8px;
+	}
+}
+.p-xs{
+	font-size: 12px;
+	line-height: 17px;
+	letter-spacing: 0.2px;
+}
+.contact-text{
+	padding: 0 10%;
 }
 /*-------------------------------------------------------------
 						END	SECTION GUIDE
@@ -248,6 +338,9 @@
 	background-color: #1d87e4;
 	&.opacity{
 		background-color: rgba(29, 135, 228, 0.8);
+		&:hover{
+			background-color: rgba(29, 135, 228, 0.9);
+		}
 	}
 }
 .btn-warning{
@@ -278,4 +371,8 @@
 }
 .btn-brawn{
 	background-color: #784009;
+	&:hover{
+		color: #ffffff;
+		background-color: #784009 + 10%;
+	}
 }

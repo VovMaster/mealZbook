@@ -1,0 +1,178 @@
+.main-nav{
+	background-color: #75481c;
+	background-image: linear-gradient(180deg, rgba(0,0,0,.25) -10px, rgba(101,56,12,1) 50%);
+	li{
+		a{
+			color: #fff;
+			font-size: 12px;
+			font-weight: 600;
+			line-height: 24px;
+			padding: 13px 15px;
+			.transition(0.3s);
+			text-transform: uppercase;
+			&:hover{
+				background-color: rgba(255, 255, 255, 0.2);
+			}
+		}
+		&.current a{
+			background-color: rgba(255, 255, 255, 0.2);
+		}
+	}
+}
+.top-links{
+	margin: 27px -14px 27px 0;
+	width: 40%;
+	li{
+		float: right;
+		&:last-child{
+			a:after{
+				display: none;
+			}
+		}
+	}
+	a{
+		color: #4c4c4c;
+		text-transform: uppercase;
+		font-size: 12px;
+		padding: 5px 14px;
+		position: relative;
+		&:after{
+			content: " ";
+			position: absolute;
+			top: 50%;
+			margin-top: -4px;
+			width: 1px;
+			background-color: #cccccc;
+			left: 0;
+			height: 8px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo{
+	width: 20%;
+	float: left;
+}
+.navbar-brand{
+	height: auto;
+	padding: 22px 0;
+	width: 100%;
+	text-align: center;
+	> img{
+		display: inline-block;
+		text-align: center;
+	}
+}
+.main-nav{
+	padding: 0 70px;
+	.nav{
+		margin-right: 0;
+	}
+	li{
+		float: none;
+		white-space: nowrap;
+	}
+}
+.navbar-header:after{
+	clear: none;
+}
+.social-icons{
+	float: left;
+	margin: 27px 0;
+	width: 40%;
+	li{
+		float: left;
+	}
+	a{
+		width: 24px;
+		height: 24px;
+		margin: 0 15px 0 0;
+		display: block;
+		border-radius: 1px;
+		text-align: center;
+		border-radius: 100%;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	.icon{
+		margin: auto;
+		display: block;
+		width: 16px;
+		height: 20px;
+		color: #fff;
+		line-height: 23px;
+	}
+
+	.facebook{
+		background-color: #3b5998;
+	}
+	.twitter{
+		background-color: #55acee;
+	}
+	.instagram{
+		background-color: #6a453b;
+	}
+}
+.navbar-toggle{
+	background-color: #005387;
+	margin: 28px 0;
+}
+.icon-bar{
+	background-color: #fff;
+}
+@media (max-width: 850px){
+	.main-nav{
+		li{
+			a{
+				padding: 33px 13px;
+			}
+		}
+	}
+}
+@media (max-width: 767px){
+	.main-nav{
+		width: 100%;
+		.nav{
+			margin: 0;
+			a{
+				text-align: center;
+				padding: 12px;
+				text-transform: uppercase;
+			}
+		}
+	}
+	.social-icons{
+		margin-right: 10px;
+		a{
+			margin: 0 2px;
+		}
+	}
+}

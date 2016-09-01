@@ -200,6 +200,81 @@
 	.slick-slide{
 		padding: 10px;
 		width: 20%;
+		position: relative;
+		img {
+			border-radius: 3px;
+		}
+	}
+}
+.content-slider {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	border-radius: 3px;
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.7);
+	font-size: 0;
+	line-height: 0;
+	text-align: center;
+	&:before {
+		content: " ";
+		display: block;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		left: 10px;
+		position: absolute;
+		border-radius: 3px;
+		right: 10px;
+		bottom: 10px;
+		top: 10px;
+	}
+	&:after {
+		content: " ";
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+	h5 {
+		width: 100%;
+		display: inline-block;
+		margin: 10px 0;
+		vertical-align: middle;
+		font-size: 16px;
+		text-transform: uppercase;
+		font-weight: 500;
+		color: #fff;
+	}
+}
+.triangle {
+	position: absolute;
+	&.right {
+		right: 0;
+	}
+	&.left {
+		left: 0;
+	}
+	&.top {
+		top: 0;
+		&.right {
+			border-top: 10px solid #faa800;
+			border-left: 10px solid transparent;
+		}
+		&.left {
+			border-top: 10px solid #faa800;
+			border-right: 10px solid transparent;
+		}
+	}
+	&.bottom {
+		bottom: 0;
+		&.right {
+			border-bottom: 10px solid #faa800;
+			border-left: 10px solid transparent;
+		}
+		&.left {
+			border-bottom: 10px solid #faa800;
+			border-right: 10px solid transparent;
+		}
 	}
 }
 /*-------------------------------------------------------------

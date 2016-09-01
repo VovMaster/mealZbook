@@ -266,6 +266,20 @@ h3 {
   left: 0;
   height: 8px;
 }
+.nav-justif {
+  text-align: justify;
+  width: 100%;
+  font-size: 0;
+  line-height: 0;
+}
+.nav-justif li {
+  display: inline-block;
+}
+.nav-justif:after {
+  content: " ";
+  display: inline-block;
+  width: 100%;
+}
 .logo {
   width: 20%;
   float: left;
@@ -571,6 +585,81 @@ h3 {
 .bg-dark .slick-slide {
   padding: 10px;
   width: 20%;
+  position: relative;
+}
+.bg-dark .slick-slide img {
+  border-radius: 3px;
+}
+.content-slider {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+}
+.content-slider:before {
+  content: " ";
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  left: 10px;
+  position: absolute;
+  border-radius: 3px;
+  right: 10px;
+  bottom: 10px;
+  top: 10px;
+}
+.content-slider:after {
+  content: " ";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.content-slider h5 {
+  width: 100%;
+  display: inline-block;
+  margin: 10px 0;
+  vertical-align: middle;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+}
+.triangle {
+  position: absolute;
+}
+.triangle.right {
+  right: 0;
+}
+.triangle.left {
+  left: 0;
+}
+.triangle.top {
+  top: 0;
+}
+.triangle.top.right {
+  border-top: 10px solid #faa800;
+  border-left: 10px solid transparent;
+}
+.triangle.top.left {
+  border-top: 10px solid #faa800;
+  border-right: 10px solid transparent;
+}
+.triangle.bottom {
+  bottom: 0;
+}
+.triangle.bottom.right {
+  border-bottom: 10px solid #faa800;
+  border-left: 10px solid transparent;
+}
+.triangle.bottom.left {
+  border-bottom: 10px solid #faa800;
+  border-right: 10px solid transparent;
 }
 /*-------------------------------------------------------------
 						END	SECTION BG_DARK
@@ -824,6 +913,36 @@ h3 {
 }
 .slick-next:before[dir="rtl"] {
   content: "\e905";
+}
+.slick-arrow2 .slick-prev:before {
+  content: "\e902";
+}
+.slick-arrow2 .slick-next:before {
+  content: "\e901";
+}
+.slick-arrow2 .slick-prev,
+.slick-arrow2 .slick-next {
+  height: 33px;
+  width: 33px;
+  background: #1d87e4;
+  border: none;
+  color: #fff;
+}
+.slick-arrow2 .slick-prev:before,
+.slick-arrow2 .slick-next:before {
+  opacity: 1;
+  color: #fff;
+  font-size: 13px;
+}
+.slick-arrow2 .slick-prev {
+  left: -53px;
+  right: auto;
+  top: 50%;
+}
+.slick-arrow2 .slick-next {
+  left: auto;
+  right: -53px;
+  top: 50%;
 }
 /* Dots */
 .slick-dotted .slick-slider {

@@ -94,6 +94,37 @@
     }
 }
 
+.slick-arrow2 {
+    .slick-prev:before {
+      content: "\e902";
+    }
+    .slick-next:before {
+      content: "\e901";
+    }
+    .slick-prev, .slick-next {
+        height: 33px;
+        width: 33px;
+        background: #1d87e4;
+        border: none;
+        color: #fff;
+        &:before {
+            opacity: 1;
+            color: #fff;
+            font-size: 13px;
+        }
+    }
+    .slick-prev {
+        left: -53px;
+        right: auto;
+        top: 50%;
+    }
+    .slick-next {
+        left: auto;
+        right: -53px;
+        top: 50%;
+    }
+}
+
 /* Dots */
 
 .slick-dotted .slick-slider {

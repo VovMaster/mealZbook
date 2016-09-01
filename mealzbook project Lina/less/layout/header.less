@@ -48,7 +48,6 @@
 		}
 	}
 }
-
 .nav-justif {
 	text-align: justify;
 	width: 100%;
@@ -62,9 +61,7 @@
 		display: inline-block;
 		width: 100%;
 	}
-}
-
-.logo{
+}.logo{
 	width: 20%;
 	float: left;
 }
@@ -91,10 +88,14 @@
 .navbar-header:after{
 	clear: none;
 }
+.top-header{
+	.social-icons{
+		width: 40%;
+		float: left;
+	}
+}
 .social-icons{
-	float: left;
 	margin: 27px 0;
-	width: 40%;
 	li{
 		float: left;
 	}
@@ -113,8 +114,6 @@
 	.icon{
 		margin: auto;
 		display: block;
-		width: 16px;
-		height: 20px;
 		color: #fff;
 		line-height: 23px;
 	}
@@ -127,6 +126,30 @@
 	}
 	.instagram{
 		background-color: #6a453b;
+	}
+	.google{
+		background-color: #dc4e41;
+	}
+	&.large{
+		a{
+			width: 32px;
+			height: 32px;
+		}
+		.icon{
+			font-size: 20px;
+			line-height: 32px;
+		}
+		.icon-instagram{
+			font-size: 18px;
+			padding: 1px 0 0 1px;
+		}
+		.icon-google-plus{
+			font-size: 21px;
+		}
+		.icon-twitter{
+			font-size: 18px;
+			padding-left: 2px;
+		}
 	}
 }
 .navbar-toggle{

@@ -160,7 +160,6 @@ body {
   margin: auto;
 }
 .main-full-width {
-  /*max-width: 1267px;*/
   padding: 0 87px;
   margin: auto;
 }
@@ -176,7 +175,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: bold;
+  font-weight: 800;
 }
 p {
   line-height: 24px;
@@ -307,10 +306,12 @@ h3 {
 .navbar-header:after {
   clear: none;
 }
-.social-icons {
-  float: left;
-  margin: 27px 0;
+.top-header .social-icons {
   width: 40%;
+  float: left;
+}
+.social-icons {
+  margin: 27px 0;
 }
 .social-icons li {
   float: left;
@@ -330,8 +331,6 @@ h3 {
 .social-icons .icon {
   margin: auto;
   display: block;
-  width: 16px;
-  height: 20px;
   color: #fff;
   line-height: 23px;
 }
@@ -343,6 +342,28 @@ h3 {
 }
 .social-icons .instagram {
   background-color: #6a453b;
+}
+.social-icons .google {
+  background-color: #dc4e41;
+}
+.social-icons.large a {
+  width: 32px;
+  height: 32px;
+}
+.social-icons.large .icon {
+  font-size: 20px;
+  line-height: 32px;
+}
+.social-icons.large .icon-instagram {
+  font-size: 18px;
+  padding: 1px 0 0 1px;
+}
+.social-icons.large .icon-google-plus {
+  font-size: 21px;
+}
+.social-icons.large .icon-twitter {
+  font-size: 18px;
+  padding-left: 2px;
 }
 .navbar-toggle {
   background-color: #005387;
@@ -668,21 +689,27 @@ h3 {
 						SECTION GUIDE
 -------------------------------------------------------------*/
 .guide {
-  padding: 185px 0;
+  padding: 185px 0 54px;
   text-align: center;
 }
 .guide .title {
   margin: 3px 0 2px;
 }
+.guide > .main-width {
+  padding: 0;
+}
 .wrap-menu {
   background-image: url(../images/guide-section-bg.png);
   background-repeat: no-repeat;
-  margin-top: 36px;
+  margin: 36px 0 80px;
   background-position: 50% 71%;
 }
 .cover {
   position: relative;
   display: inline-block;
+}
+.cover:hover .wrap-opacity-text-block {
+  opacity: 1;
 }
 .wrap-opacity-text-block {
   position: absolute;
@@ -690,15 +717,100 @@ h3 {
   left: 0;
   width: 100%;
   text-align: center;
+  margin-top: -66px;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  -ms-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
 }
 .opacity-text-block {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 4px;
-  padding: 20px 22px;
+  padding: 20px 24px;
   display: inline-block;
+  font-size: 18px;
+  line-height: 15px;
 }
 .opacity-text-block .title-wide {
   font-size: 10px;
+}
+.opacity-text-block .btn {
+  margin-top: 18px;
+}
+.bottom-line {
+  width: 40px;
+  height: 1px;
+}
+.bottom-line.gray {
+  background-color: #cccccc;
+}
+.bottom-line.orange {
+  background-color: #faa800;
+}
+.style-block-guide {
+  background-color: #ffffff;
+  position: relative;
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding: 50px 40px;
+  padding-right: 35%;
+  background-position: 0 0;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+}
+.style-block-guide .title {
+  color: #333333;
+  font-weight: 800;
+  margin-bottom: 7px;
+}
+.style-block-guide .btn {
+  margin: 11px 0 8px;
+}
+.style-block-guide .bottom-line {
+  margin: auto;
+}
+.contact {
+  background-color: #ffffff;
+  border-radius: 2px;
+  margin: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+}
+.contact:after {
+  content: "";
+  width: 1px;
+  background-color: #d9d9d9;
+  position: absolute;
+  left: 50%;
+  top: 44px;
+  bottom: 44px;
+  margin-left: 1px;
+}
+.contact .bottom-line {
+  margin: 6px auto  12px;
+}
+.contact .black {
+  font-size: 16px;
+}
+.contact .title {
+  margin: 10px 0 0;
+}
+.contact .social-icons {
+  display: inline-block;
+  margin: 14px 0 8px;
+}
+.p-xs {
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0.2px;
+}
+.contact-text {
+  padding: 0 10%;
 }
 /*-------------------------------------------------------------
 						END	SECTION GUIDE
@@ -708,6 +820,9 @@ h3 {
 }
 .btn-primary.opacity {
   background-color: rgba(29, 135, 228, 0.8);
+}
+.btn-primary.opacity:hover {
+  background-color: rgba(29, 135, 228, 0.9);
 }
 .btn-warning {
   background-color: #faa800;
@@ -741,6 +856,10 @@ h3 {
 }
 .btn-brawn {
   background-color: #784009;
+}
+.btn-brawn:hover {
+  color: #ffffff;
+  background-color: #824a13;
 }
 /* Slider */
 .slick-slider {

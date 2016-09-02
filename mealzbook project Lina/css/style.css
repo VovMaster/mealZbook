@@ -3229,9 +3229,17 @@ h3 {
   border-radius: 1px;
   text-align: center;
   border-radius: 100%;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
 }
 .social-icons a:hover {
   text-decoration: none;
+  -moz-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.7);
 }
 .social-icons .icon {
   margin: auto;
@@ -3905,6 +3913,39 @@ h3 {
 .main-footer {
   position: relative;
   z-index: 2;
+}
+.copyright {
+  font-size: 12px;
+  color: #ffffff;
+}
+.bottom-footer {
+  padding: 65px 0 32px;
+}
+.bottom-footer .social-icons {
+  display: inline-block;
+  margin-top: 14px;
+}
+.bottom-footer .social-icons a {
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  margin-right: 16px;
+}
+.bottom-footer .social-icons .icon {
+  line-height: 26px;
+}
+.bottom-footer .social-icons .icon-facebook {
+  font-size: 17px;
+}
+.bottom-footer .social-icons .icon-twitter {
+  font-size: 15px;
+}
+.bottom-footer .social-icons .icon-instagram {
+  font-size: 14px;
+}
+.logo-footer {
+  margin-bottom: 22px;
+  display: inline-block;
 }
 /* Slider */
 .slick-slider {

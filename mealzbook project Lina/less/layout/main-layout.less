@@ -80,15 +80,25 @@
 	padding: 88px 0 77px;
 }
 .full-description{
-	margin: 0 433px 0 720px; 
+	margin: 0 340px 0 720px; 
 	padding-top: 49px;
+	position: relative;
+	z-index: 2;
 }
 .bg-image{
 	position: absolute;
 	top: 38px;
 	right: 0;
 	width: 433px;
+	z-index: 1;
+	img {
+		display: block;
+		height: auto;
+		width: 100%;
+		margin: auto;
+	}
 }
+
 .description-image{
 	width: 719px;
 	float: left;
@@ -205,6 +215,7 @@
 	height: 26px;
 	float: left;
 	margin: 0 10px 10px 0;
+	border-radius: 8px;
 }
 /*-------------------------------------------------------------
 						END	SECTION DESCRIPTION
@@ -223,6 +234,8 @@
 	.slider{
 		margin-bottom: -216px;
 		margin-top: 27px;
+		margin-left: -10px;
+		margin-right: -10px;
 		z-index: 2;
 	}
 	.slick-slide{
@@ -337,11 +350,9 @@
 .guide{
 	padding: 185px 0 54px;
 	text-align: center;
+	overflow: hidden;
 	.title{
 		margin: 3px 0 2px;
-	}
-	> .main-width{
-		padding: 0;
 	}
 }
 .wrap-menu{
@@ -415,6 +426,7 @@
 	border-radius: 2px;
 	position: relative;
 	z-index: 2;
+	min-height: 302px;
 	.title{
 		color: #333333;
 		font-weight: 800;

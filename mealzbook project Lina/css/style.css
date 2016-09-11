@@ -3384,6 +3384,32 @@ h3 {
   background-color: #faa800;
   margin-top: -1px;
 }
+.slide-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.slide-text p {
+  font-size: 14px;
+  line-height: 23px;
+  color: #ffffff;
+}
+.slide-text h1 {
+  color: #fff;
+  font-size: 40px;
+  line-height: 45px;
+}
+.category-name {
+  font-weight: 500;
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 22px;
+  background: #f7a600;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 0 7px;
+}
 /*-------------------------------------------------------------
 					SECTION SECTION WRAP-SLIDER
 -------------------------------------------------------------*/
@@ -3914,6 +3940,7 @@ h3 {
   padding: 14px 26px;
   font-size: 12px;
   line-height: 14px;
+  font-weight: 700;
 }
 .btn-brawn {
   background-color: #784009;
